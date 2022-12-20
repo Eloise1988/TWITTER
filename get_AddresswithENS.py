@@ -1,7 +1,7 @@
 from web3 import Web3
 
 #Insert infura authentification key
-url='https://mainnet.infura.io/v3/d567xxxxxxxxxxxxxxxxxxxxxxx'
+url='https://mainnet.infura.io/v3/YOUR-API-KEY'
 web3 = Web3(Web3.HTTPProvider(url))
 
 eth_address = web3.ens.address(name='ethereum.eth')
