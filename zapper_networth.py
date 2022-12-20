@@ -16,7 +16,7 @@ def get_stream(url):
                     
                     if 'totals' in totals:
                         if totals['totals']!=[]:
-                            #Adding USD balances in all aseets (defi, lending, staking, hard assets etc..)
+                            #Adding USD balances in all assets (defi, lending, staking, hard assets, NFTs etc..)
                             for i in range(0,len(totals['totals'])):
                                 sum_usd+=totals['totals'][i]['balanceUSD']
                             
