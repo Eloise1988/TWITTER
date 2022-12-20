@@ -6,7 +6,7 @@ def get_stream(url):
     s = requests.Session()
     sum_usd=0
     #Enter your API authentification key from zapper.fi 
-    with s.get(url, timeout=(15,5), auth=('xxxxxxxxxxxxxxxx', ''), headers=None, stream=True) as resp:
+    with s.get(url, timeout=(15,5), auth=('YOUR-API-KEY', ''), headers=None, stream=True) as resp:
         
         for line in resp.iter_lines():
             if line:
